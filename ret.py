@@ -13,7 +13,7 @@ class ret(Tk):
         self.iconbitmap(r'libico.ico')
         self.title("Return")
         self.maxsize(420,280)
-        self.canvas = Canvas(width=500, height=417, bg='gray')
+        self.canvas = Canvas(width=500, height=417, bg='brown')
         self.canvas.pack()
         self.cal = 0
         a = StringVar()
@@ -51,7 +51,7 @@ class ret(Tk):
                 except Error:
                     messagebox.showerror("Error","Something Goes Wrong")
         Label(self, text='Return Book', fg='red',font=('arial', 35, 'bold')).pack()
-        Label(self, text='Enter Book ID', font=('Comic Scan Ms', 15, 'bold')).place(x=20, y=120)
-        Entry(self, textvariable=a, width=40).place(x=165, y=124)
-        Button(self, text="Return", width=25, command=qui).place(x=180, y=180)
+        Label(self, text='Enter Book ID',bg="light blue", font=('Comic Scan Ms', 15, 'bold')).place(x=20, y=80)
+        Entry(self, textvariable=a, width=40).place(x=165, y=90)
+        Button(self, text="Return",bg="green", width=25, command=qui).place(x=120, y=180)
 ret().mainloop()

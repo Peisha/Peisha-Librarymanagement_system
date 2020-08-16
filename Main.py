@@ -12,9 +12,9 @@ class Lib(Tk):
         super().__init__()
         self.a = StringVar()
         self.b = StringVar()
-        self.maxsize(1200, 700)
-        self.minsize(1200, 700)
-        self.configure(bg="gray")
+        self.maxsize(600, 400)
+        self.minsize(600, 400)
+        self.configure(bg="brown")
         self.title("LIBRARY MANAGEMENT SYSTEM")
 
 
@@ -49,19 +49,19 @@ class Lib(Tk):
         def check():
 
 
-                    self.label = Label(self, text="LOGIN", bg = 'gray' , fg = 'black', font=("courier-new", 24,'bold'))
-                    self.label.place(x=550, y=90)
-                    self.label1 = Label(self, text="User-Id" , bg = 'gray' , fg = 'black', font=("courier-new", 18, 'bold'))
-                    self.label1.place(x=370, y=180)
+                    self.label = Label(self, text="LOGIN", bg = 'light blue' , fg = 'black', font=("courier-new", 24,'bold'))
+                    self.label.place(x=200, y=90)
+                    self.label1 = Label(self, text="User-Id :" , bg = 'light blue' , fg = 'black', font=("courier-new", 18, 'bold'))
+                    self.label1.place(x=50, y=180)
                     self.user_text = Entry(self, textvariable=self.a, width=45)
-                    self.user_text.place(x=480, y=190)
-                    self.label2 = Label(self, text="Password" , bg = 'gray' , fg = 'black', font=("courier-new", 18, 'bold'))
-                    self.label2.place(x=340, y=250)
+                    self.user_text.place(x=250, y=190, height='30')
+                    self.label2 = Label(self, text="Password :" , bg = 'light blue' , fg = 'black', font=("courier-new", 18, 'bold'))
+                    self.label2.place(x=50, y=250)
                     self.pass_text = Entry(self, show='*', textvariable=self.b, width=45)
-                    self.pass_text.place(x=480, y=255)
-                    self.butt = Button(self, text="Login",bg ='white', font=10, width=8, command=chex).place(x=580, y=300)
-                    self.label3 = Label(self, text="LIBRARY MANAGEMENT SYSTEM", bg='gray', fg='black', font=("courier-new", 24, 'bold'))
-                    self.label3.place(x=350, y=30)
+                    self.pass_text.place(x=250, y=255, height='30')
+                    self.butt = Button(self, text="Login",bg ='green', font=10, width=8, command=chex).place(x=200, y=350)
+                    self.label3 = Label(self, text="LIBRARY MANAGEMENT SYSTEM", bg='light blue', fg='black', font=("courier-new", 24, 'bold'))
+                    self.label3.place(x=50, y=30)
 
 
         check()

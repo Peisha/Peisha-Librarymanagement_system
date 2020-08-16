@@ -15,7 +15,7 @@ class reg(Tk):
         self.maxsize(500, 417)
         self.minsize(500, 417)
         self.title('Add User')
-        self.canvas = Canvas(width=500, height=417, bg='gray')
+        self.canvas = Canvas(width=500, height=417, bg='brown')
         self.canvas.pack()
 #creating variables Please chech carefully
         u = StringVar()
@@ -44,12 +44,12 @@ class reg(Tk):
             except Error:
                 messagebox.showinfo("Error", "Something Goes Wrong")
 #label and input
-        Label(self, text='User Details', bg='gray', fg='black', font=('Courier new', 25, 'bold')).place(x=130, y=22)
-        Label(self, text='Username:', bg='gray', font=('Courier new', 10, 'bold')).place(x=70, y=82)
+        Label(self, text='User Details', bg='light blue', fg='black', font=('Courier new', 25, 'bold')).place(x=130, y=22)
+        Label(self, text='Username:', bg='light blue', font=('Courier new', 10, 'bold')).place(x=70, y=82)
         Entry(self, textvariable=u, width=30).place(x=200, y=84)
-        Label(self, text='Name:', bg='gray', font=('Courier new', 10, 'bold')).place(x=70, y=130)
+        Label(self, text='Name:', bg='light blue', font=('Courier new', 10, 'bold')).place(x=70, y=130)
         Entry(self, textvariable=n, width=30).place(x=200, y=132)
-        Label(self, text='Password:', bg='gray', font=('Courier new', 10, 'bold')).place(x=70, y=180)
+        Label(self, text='Password:', bg='light blue', font=('Courier new', 10, 'bold')).place(x=70, y=180)
         Entry(self, textvariable=p, width=30).place(x=200, y=182)
-        Button(self, text="Submit", width=15, command=insert).place(x=230, y=220)
+        Button(self, text="Submit", width=15,bg="green", command=insert).place(x=200, y=240)
 reg().mainloop()
